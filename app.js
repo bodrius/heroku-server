@@ -8,7 +8,7 @@ const app = express();
 
 const formatsLogger = app.get("env") === "development" ? "dev" : "short";
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 app.use(logger(formatsLogger));
 
