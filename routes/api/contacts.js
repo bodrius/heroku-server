@@ -7,7 +7,7 @@ const {
   removeContact,
   updateContact,
   getContactById,
-} = require("../../src/functions");
+} = require("../../models/contacts");
 const { createContactSchema } = require("../schemas/createContactSchema");
 
 router.get("/", async (req, res, next) => {
